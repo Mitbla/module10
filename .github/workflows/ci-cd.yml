@@ -67,7 +67,7 @@ jobs:
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/module10-secure-user-model:latest
 
       - name: Run Trivy scan
-        uses: aquasecurity/trivy-action@0.24.0
+        uses: aquasecurity/trivy-action@v0.24.0
         with:
           image-ref: ${{ secrets.DOCKERHUB_USERNAME }}/module10-secure-user-model:latest
           format: table
